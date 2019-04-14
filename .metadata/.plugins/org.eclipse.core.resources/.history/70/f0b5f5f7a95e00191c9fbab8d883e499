@@ -1,0 +1,17 @@
+package com.cl9.rest.RESTFul;
+
+
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+
+import org.glassfish.jersey.server.model.ParamQualifier;
+
+
+public class Add {
+	@Path("GET")
+	@Produces("Application")
+	public String name() {
+		return "hello"
+	}
+
+}

@@ -1,0 +1,16 @@
+import mpi.MPI;
+
+public class mp1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MPI.Init(args);
+		
+		int rank = MPI.COMM_WORLD.Rank();
+		System.out.println("I'm a process with rank" + rank);
+		
+		MPI.Finalize();
+
+	}
+
+}

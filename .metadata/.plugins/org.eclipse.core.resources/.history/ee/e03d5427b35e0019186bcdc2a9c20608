@@ -1,0 +1,27 @@
+package com.cl9.rest.RESTFul;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+
+public class Users {
+	
+	public HashMap<String, ArrayList<String>> userMemo;
+
+	public Users(HashMap<String, ArrayList<String>> userMemo) {
+		super();
+		this.userMemo = userMemo;
+	}
+
+	public HashMap<String, ArrayList<String>> getUserMemo() {
+		return userMemo;
+	}
+
+	public void setUserMemo(HashMap<String, ArrayList<String>> userMemo) {
+		this.userMemo = userMemo;
+	}
+	
+	
+	
+
+}

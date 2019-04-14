@@ -1,0 +1,45 @@
+package com.cl9.rest.RESTFul;
+
+import java.awt.PageAttributes.MediaType;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+
+import javax.ws.rs.Produces;
+
+
+public class Users {
+	
+	public HashMap<String, ArrayList<String>> userMemo;
+
+	public Users() {
+		super();
+		this.userMemo.put("Mayur", new ArrayList<String>(
+			    Arrays.asList("Eat", "Sleep", "Code")));
+		this.userMemo.put("Shivansh", new ArrayList<String>(
+			    Arrays.asList("Eat", "Wake", "Code")));
+		this.userMemo.put("Kunal", new ArrayList<String>(
+			    Arrays.asList("Eat", "Sleep", "Eat")));
+
+		
+	}
+
+	public HashMap<String, ArrayList<String>> getUserMemo() {
+		return userMemo;
+	}
+
+	public void setUserMemo(HashMap<String, ArrayList<String>> userMemo) {
+		this.userMemo = userMemo;
+	}
+	
+	@GET
+	@Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
+	public String getList() {
+		return userMemo.toString()
+	}
+	
+	
+	
+	
+
+}

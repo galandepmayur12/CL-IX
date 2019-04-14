@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/home/rishmay13/Documents/workspace/pracPractice/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2722114679.index
+2397797769.index
+4146901134.index
+1958426529.index
+862144579.index
+2217923696.index
+791108717.index

@@ -1,0 +1,14 @@
+import mpi.MPI;
+
+public class Mpi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MPI.Init(args);
+		
+		
+		MPI.Finalize();
+
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.cl9.rest.RESTFul;
+
+public class Users {
+	
+	public List<String> users;
+
+}

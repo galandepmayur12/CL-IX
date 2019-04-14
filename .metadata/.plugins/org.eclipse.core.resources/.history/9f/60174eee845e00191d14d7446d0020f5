@@ -1,0 +1,23 @@
+import mpi.MPI;
+
+public class Mpi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MPI.Init(args);
+		
+		int rank = MPI.COMM_WORLD.Rank();
+		
+		System.out.println("This is a prcoess with rank:" + rank);
+		if (rank == 1) {
+			String str = "2+3";
+			MPI.COMM_WORLD.Send(, arg1, arg2, arg3, arg4, arg5);
+		} else {
+			
+		}
+		
+		MPI.Finalize();
+
+	}
+
+}

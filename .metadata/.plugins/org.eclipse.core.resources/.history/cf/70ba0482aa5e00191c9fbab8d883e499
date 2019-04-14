@@ -1,0 +1,21 @@
+package com.cl9.rest.RESTFul;
+
+
+import java.awt.PageAttributes.MediaType;
+
+import javax.swing.text.PlainDocument;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+
+import org.w3c.dom.stylesheets.MediaList;
+
+
+public class Add {
+	@Path("first/")
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String name() {
+		return "hello";
+	}
+
+}

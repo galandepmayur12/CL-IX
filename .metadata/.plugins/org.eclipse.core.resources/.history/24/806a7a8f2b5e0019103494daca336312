@@ -1,0 +1,10 @@
+
+public class ConcatImpl implements Concat {
+
+	@Override
+	public String concat(String str1, String str2) {
+		// TODO Auto-generated method stub
+		str1 + str2;
+	}
+
+}

@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Server,org.eclipse.launchbar.core.descriptorType.default\:Client,org.eclipse.launchbar.core.descriptorType.default\:Client (1),org.eclipse.launchbar.core.descriptorType.default\:Mpi,org.eclipse.launchbar.core.descriptorType.default\:ScatterGather,org.eclipse.launchbar.core.descriptorType.default\:J2EE Preview at localhost,org.eclipse.launchbar.core.descriptorType.default\:Tomcat v8.5 Server at localhost,org.eclipse.launchbar.core.descriptorType.default\:mp1
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:J2EE\ Preview\ at\ localhost/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:J2EE\ Preview\ at\ localhost/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:ScatterGather/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:ScatterGather/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Server/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Server/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

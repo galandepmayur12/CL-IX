@@ -1,0 +1,14 @@
+import java.io.IOException;
+import java.net.ServerSocket;
+
+public class Server {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		ServerSocket ss = new ServerSocket(1234);
+		
+		Socket soc = ss.accept();
+
+	}
+
+}

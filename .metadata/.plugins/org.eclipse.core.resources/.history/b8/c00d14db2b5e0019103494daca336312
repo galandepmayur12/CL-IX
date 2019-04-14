@@ -1,0 +1,13 @@
+import java.rmi.Naming;
+
+public class Server {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Concat con = new ConcatImpl();
+		
+		Naming.bind("ccat", con);
+
+	}
+
+}

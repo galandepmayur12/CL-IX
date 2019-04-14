@@ -1,0 +1,11 @@
+import java.rmi.Remote;
+
+public class ConcatImpl implements Concat, Remote {
+
+	@Override
+	public String concat(String str1, String str2) {
+		// TODO Auto-generated method stub
+		return str1 + str2;
+	}
+
+}

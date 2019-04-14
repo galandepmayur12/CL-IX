@@ -1,0 +1,11 @@
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.net.Socket;
+
+public class ClientHandler{
+	private Socket soc;
+	private DataInputStream dis;
+	private DataOutputStream dos;
+	
+	
+}

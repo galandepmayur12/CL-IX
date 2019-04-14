@@ -1,0 +1,46 @@
+import java.rmi.server.Operation;
+import java.util.Iterator;
+
+import mpi.MPI;
+
+public class Mpi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MPI.Init(args);
+		
+		int rank = MPI.COMM_WORLD.Rank();
+		
+		System.out.println("This is a prcoess with rank:" + rank);
+		if (rank == 1) {
+			String str = "2,3";
+			int result = 0;
+			MPI.COMM_WORLD.Send(str, 0, 1, MPI.OBJECT, 0, MPI.ANY_SOURCE);
+			
+			MPI.COMM_WORLD.Recv(result, 0, 1, MPI.INT, 0, MPI.ANY_SOURCE);
+			
+			System.out.println("I'm server with rank " + MPI.COMM_WORLD.Rank() + "and result is:");
+		} else {
+			String str = "";
+			MPI.COMM_WORLD.Recv(str, 0, 1, MPI.OBJECT, 1, MPI.ANY_SOURCE);
+			int a = Operation(str);
+			MPI.COMM_WORLD.Send(a, 0, 1, MPI.INT, 0, MPI.ANY_SOURCE);
+			
+		}
+		
+		MPI.Finalize();
+
+	}
+
+	private static int Operation(String str) {
+		// TODO Auto-generated method stub
+		String arr[] = str.split(",");
+		int result = 0;
+		for (String string : arr) {
+			result += Integer.parseInt(string);
+		}
+		
+		return result;
+	}
+
+}

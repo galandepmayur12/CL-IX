@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jst.server.preview.launchConfigurationType">
+<mapAttribute key="org.eclipse.debug.core.environmentVariables">
+<mapEntry key="MPJ_HOME" value="${MPJ_HOME}"/>
+</mapAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-jar ${MPJ_HOME}/bin/strater.jar -np 4"/>
+<stringAttribute key="server-id" value="J2EE Preview at localhost (2)"/>
+</launchConfiguration>

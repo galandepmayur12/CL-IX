@@ -1,0 +1,20 @@
+import java.net.MalformedURLException;
+import java.rmi.Naming;
+import java.rmi.RemoteException;
+
+public class Server {
+
+	protected Server() throws RemoteException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) throws RemoteException, MalformedURLException {
+		// TODO Auto-generated method stub
+		ConcatImpl con = new ConcatImpl();
+		
+		Naming.rebind("ccat", con);
+
+	}
+
+}

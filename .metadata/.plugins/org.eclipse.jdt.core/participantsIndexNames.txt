@@ -1,0 +1,5 @@
+INDEX VERSION 1.130
+/home/rishmay13/Documents/workspace/pracPractice/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/595895517.index
+/WEBSOAP/src/main/resources
+/home/rishmay13/Documents/workspace/pracPractice/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2268443998.index
+/RESTFul/src/main/java
