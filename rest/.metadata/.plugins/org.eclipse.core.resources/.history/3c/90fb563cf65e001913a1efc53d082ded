@@ -1,0 +1,50 @@
+package org.user.rest.REST;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+
+@XmlRootElement
+public class User{
+	
+	public String username;
+	public ArrayList<String> projectList;
+
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+//		this.userData = new HashMap<>();
+//		
+//		this.userData.put("Kunal", new ArrayList<>(Arrays.asList("Eat", "Sleep", "Code")));
+//		this.userData.put("Mayur", new ArrayList<>(Arrays.asList("Eat1", "Sleep1", "Code1")));
+//		this.userData.put("John Snow", new ArrayList<>(Arrays.asList("Eat2", "Sleep2", "Code2")));
+	}
+	
+	public User(String  username, List<String> list) {
+		this.username = username;
+		this.projectList = new ArrayList<>(list);
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public ArrayList<String> getProjectList() {
+		return projectList;
+	}
+
+	public void setProjectList(ArrayList<String> projectList) {
+		this.projectList = projectList;
+	}
+	
+	
+
+}

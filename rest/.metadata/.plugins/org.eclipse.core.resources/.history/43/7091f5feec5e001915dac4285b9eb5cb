@@ -1,0 +1,33 @@
+package org.user.rest.REST;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+
+public class User {
+	public HashMap<String, ArrayList<String>> userData;
+	
+	public String username;
+	public ArrayList<String> projectList;
+
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+		this.userData = new HashMap<>();
+		
+		this.userData.put("Kunal", new ArrayList<>(Arrays.asList("Eat", "Sleep", "Code")));
+		this.userData.put("Mayur", new ArrayList<>(Arrays.asList("Eat1", "Sleep1", "Code1")));
+	}
+	
+	public User(String  username, ArrayList<String> projectList) {
+		this.username = username;
+		this.projectList = new ArrayList<>(projectList);
+	}
+	
+	public ArrayList<String> getUsers() {
+		this.userData.keySet().toString();
+	}
+	
+	
+
+}

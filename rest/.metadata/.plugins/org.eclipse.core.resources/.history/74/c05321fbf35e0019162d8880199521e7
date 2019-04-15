@@ -1,0 +1,6 @@
+package org.user.rest.REST;
+
+
+public class UserController {
+
+}

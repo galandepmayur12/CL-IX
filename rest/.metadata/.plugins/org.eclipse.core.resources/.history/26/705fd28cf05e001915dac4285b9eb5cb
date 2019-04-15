@@ -1,0 +1,9 @@
+package org.user.rest.REST;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class SuperUser {
+	public HashMap<String, ArrayList<String>> userData;
+
+}

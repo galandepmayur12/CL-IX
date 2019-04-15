@@ -1,0 +1,41 @@
+package org.user.rest.REST;
+
+import javax.ws.rs.Path;
+
+@Path("Users")
+public class UserController {
+	@Path("/userList")
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String getUsers() {
+		return this.userData.keySet().toString();				
+	}
+	
+	@Path("/userList")
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<User> getUsers1() {
+//		return this.userData.keySet().toString();
+		List<User> list = new ArrayList<User>();
+		for (String u1: this.userData.keySet()) {
+			list.add(new User(u1, this.userData.get(u1)));
+		}
+		return list;
+	}
+//	@Path("/userList/kunal")
+	
+	@Path("/data")
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	public String getData() {
+		return this.userData.toString();
+	}
+	
+	@Path("/{user}") 
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String getUserProject(@PathParam("user") String username) {
+		return this.userData.get(username).toString();
+	}
+
+}

@@ -1,0 +1,73 @@
+package org.user.rest.REST;
+
+import java.util.List;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+@Path("Users")
+public class UserController {
+	
+	UserService us = new UserService();
+	
+	@Path("/data")
+	@Produces(MediaType.APPLICATION_JSON)
+	@GET
+	public List<User> getData(){
+		return us.getAllUserData();
+	}
+	
+	
+	@Path("/userList")
+	@Produces(MediaType.TEXT_PLAIN)
+	@GET
+	public String getUsers1() {
+	
+		return us.getUsernames().toString();
+	}
+	
+	@Path("/{user}") 
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String getUserProject(@PathParam("user") String username) {
+		return us.getUserdata(username);
+	}
+	
+//	@Path("/userList")
+//	@GET
+//	@Produces(MediaType.TEXT_PLAIN)
+//	public String getUsers() {
+//		return this.userData.keySet().toString();				
+//	}
+//	
+//	@Path("/userList")
+//	@GET
+//	@Produces(MediaType.APPLICATION_JSON)
+//	public List<User> getUsers1() {
+////		return this.userData.keySet().toString();
+//		List<User> list = new ArrayList<User>();
+//		for (String u1: this.userData.keySet()) {
+//			list.add(new User(u1, this.userData.get(u1)));
+//		}
+//		return list;
+//	}
+////	@Path("/userList/kunal")
+//	
+//	@Path("/data")
+//	@GET
+//	@Produces(MediaType.APPLICATION_JSON)
+//	public String getData() {
+//		return this.userData.toString();
+//	}
+//	
+//	@Path("/{user}") 
+//	@GET
+//	@Produces(MediaType.TEXT_PLAIN)
+//	public String getUserProject(@PathParam("user") String username) {
+//		return this.userData.get(username).toString();
+//	}
+
+}

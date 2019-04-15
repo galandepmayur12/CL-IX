@@ -1,0 +1,13 @@
+package org.user.rest.REST;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class UserService {
+	public List<User> getAllUsers(){
+		User u1 = new User("kunal", Arrays.asList());
+		User u1 = new User("kunal", Arrays.asList());
+		User u1 = new User("kunal", Arrays.asList());
+	}
+
+}
